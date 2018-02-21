@@ -156,7 +156,7 @@ rimane l’unico in ascolto di segnali attraverso la chiamata di ​ sigwait. Sa
 generazione delle statistiche e a chiudere i thread in caso di segnale di terminazione.
 Tutti gli altri thread hanno una maschera totale dei segnali.
 
-##Compilazione ed esecuzione del codice
+## Compilazione ed esecuzione del codice
 
 Il codice è stato sviluppato e testato su Fedora 25 e Ubuntu 16.04 con il 100% di riuscita dei test
 proposti.
