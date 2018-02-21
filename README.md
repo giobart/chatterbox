@@ -6,14 +6,14 @@ Le specifiche del progetto sono state date dal docente e sono presenti nel file:
 
 
 Il file contenente il cuore del server è chatty.c come da specifica,
-Invece i files :
+invece i files :
 
  * extra/fileoperations.h
  * extra/pharser.h
  * users.h
  * workers.h
 
-Sono delle interfacce che rappresentano delle scelte progettuali che ho voluto separare e trattare singolarmente.
+sono delle interfacce che rappresentano delle scelte progettuali che ho voluto separare e trattare singolarmente.
 Le implementazioni di queste interfacce risiedono nella libreria ​ libchatty.a​ generata a partire dal file
 funcs.c che contiene il codice effettivo di queste utility.
 
@@ -43,11 +43,11 @@ ma se nel futuro si volesse espandere la quantità di informazioni che rappresen
 In questo file ho implementato la comunicazione effettiva tra Client e Server attraverso la scrittura e la
 lettura nel canale di comunicazione con le System Calls Read/Write mediante il seguente protocollo
 
-###### **MAX_NAME_LENGTH byte**​: rappresentanti il nome del mittente
-######**sizof(op_t) byte**:​ rappresentanti il tipo di operazione da effettuare
-######**MAX_NAME_LENGTH byte**:​ rappresentanti il nome del destinatario
-######**sizeof(int) byte**:​ rappresentanti la dimensione del campo di testo ovvero del campo successivo 
-######**I byte restanti sono il messaggio**
+**MAX_NAME_LENGTH byte**​: rappresentanti il nome del mittente<br />
+**sizof(op_t) byte**:​ rappresentanti il tipo di operazione da effettuare<br />
+**MAX_NAME_LENGTH byte**:​ rappresentanti il nome del destinatario<br />
+**sizeof(int) byte**:​ rappresentanti la dimensione del campo di testo ovvero del campo successivo <br />
+**I byte restanti sono il messaggio** <br />
 
 Questo nel suo insieme rappresenta un messaggio, decomponibile in header (solo le prime due
 scritture/letture) e Data (le ultime tre scritture/letture)
