@@ -4,6 +4,9 @@ Questa è una soluzione per il progetto di Laboratorio di Sistemi Operativi dell
 
 Le specifiche del progetto sono state date dal docente e sono presenti nel file: *chatterbox17.pdf*
 
+#### ATTENZIONE
+
+Questa soluzione proposta è stata sviluppata in circa una settimana e mezzo nel caldo mese di luglio 2017. Non escludo che potrebbero esserci punti oscuri e misteriosi che fanno delle magie incomprensibili all'uomo. Se qualcuno di voi avesse idee su come migliorare, o vuole insultarmi personalmente, mandate una mail a giobarty@gmail.com oppure sottomettete direttamente una PR.
 
 Il file contenente il cuore del server è chatty.c come da specifica,
 invece i files :
